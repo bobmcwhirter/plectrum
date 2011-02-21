@@ -1,0 +1,14 @@
+
+#match '/queues/foo'=>'my#handler',
+#  :selector=>
+  
+
+#consumer '/queues/bar', MyConsumer
+
+#consume MyConsumer, '/queues/bar'=>'Foo > 3'
+
+TorqueBox::Messaging::Container::Config.create {
+  consumers {
+    map '/queues/foo', 'MyConsumer'
+  }
+}

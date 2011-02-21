@@ -1,0 +1,5 @@
+
+
+TorqueBox::Messaging::Gateway.define do |gateway|
+  gateway.subscribe( 'MyConsumer', '/queues/foo', :config=>{ :one=>"twoyeah" } )
+end

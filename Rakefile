@@ -7,4 +7,4 @@ require 'rake'
 require 'rake/testtask'
 require 'rake/rdoctask'
 
-require 'org.torquebox.rake-support'
+require 'tasks/rails'
